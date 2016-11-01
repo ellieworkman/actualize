@@ -1,0 +1,11 @@
+frances_hash = {"morning" => "playing tennis", "night" => "walking with Lucy", "afternoon" => "golf"}
+
+puts "Hello. What would you like to do today Frances?"
+
+frances_favorites.each do |time, activity|
+  puts frances
+end
+
+input = gets.chomp
+
+puts "Frances' favorite activity " + input + " is " + frances_hash[input]

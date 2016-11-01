@@ -1,0 +1,36 @@
+class Song
+
+  def initialize(title, artist, year)
+    @title = title
+    @artist = artist
+    @year = year
+  end
+
+  def title=(text)
+    @title = text
+  end
+
+  def title
+    return @artist
+  end
+
+  def artist=(text)
+    @artist = text
+  end
+
+  def artist
+    return @artist
+  end
+
+  def year=(text)
+    @year = text
+  end
+
+  def year
+    return @year
+  end
+
+end
+
+song = Song.new("Wildflowers", "Tom Petty", 1994)
+puts "This song is " + song.title + " by" + song.artist + "from the year " + song.year

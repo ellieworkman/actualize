@@ -1,0 +1,32 @@
+class Song
+
+  def title=(text)
+    @title = text
+  end
+
+  def title
+    return @title
+  end
+
+  def artist=(text)
+    @artist = text
+  end
+
+  def artist
+    return @artist
+  end
+
+  def year=(text)
+    @year = text
+  end
+
+  def year
+    return @year
+  end
+
+end
+
+song = Song.new
+puts song.title = "Wildflowers"
+puts song.artist = "Tom Petty"
+puts song.year = 1994

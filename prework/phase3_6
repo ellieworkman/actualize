@@ -1,0 +1,44 @@
+class Product
+
+  def initialize(name, description, price)
+    @name = name
+    @description = description
+    @price = price
+  end
+
+  def name =(text)
+    @name = text
+  end
+
+  def name
+    return @name
+  end
+
+  def description=(text)
+    @description = text
+  end
+
+  def description
+    return @description
+  end
+
+  def price=(number)
+    return @price
+  end
+
+  def sales_price
+    return @price * .09
+  end
+
+  def total_price
+    return @price + (@price * .09)
+  end
+
+  def info
+    return puts "This product is " + name + " that" + description + "costs " + price
+  end
+
+end
+
+product = Product.new("stapler", "staples", 3.0)
+puts product.info
